@@ -1,24 +1,5 @@
 # OCUL Readme
 
-## Starting the proxy for local development
-Use the following to get a local development server running.
-
-### Dependencies
-1. Install nvm by following the directions outlined in the README.md file.
-2. Install node v22.12 by running `nvm install v22.12`
-
-### Starting the server
-1. Run: `nvm use v22.12`
-2. If you've never run the server before, install the dependencies by running `npm install`
-3. Run `npm run start:proxy`
-4. Go to: http://localhost:4201/nde/home?vid=[your-view-code]&lang=en
-
-## Building your customization package
-1. Ensure your instituion and view IDs are set in `build-settings.env`
-2. Run: `npm run build`
-3. Your view package (zip file) will be generated in the `dist` folder.
-4. Upload this zip file under the Manage customization package tab for your view. 
-
 ## Customizing your institution's logo
 ### Procedure
 
@@ -84,3 +65,22 @@ Customizing the NDE in this way has a higher barrier to entry because it require
 - The [RxJS documentation on observables](https://rxjs.dev/guide/observable)
 - The [Redux DevTools browser extension](https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) for inspecting state data in the NDE (also available for other browsers)
 - This [blog post demonstrates how to interact with the store to get values out of the record PNX data in the NDE](https://developers.exlibrisgroup.com/blog/nde-customization-how-to-build-a-component-that-requires-values-from-the-pnx/)
+
+## Setting up your local development environment
+Use the following to get a local development server running.
+
+### Dependencies
+1. Install nvm by following the directions outlined in the README.md file.
+2. Install node v22.12 by running `nvm install v22.12`
+
+### Starting the server
+1. Run: `nvm use v22.12`
+2. If you've never run the server before, install the dependencies by running `npm install`
+3. Run `npm run start:proxy`
+4. Go to: http://localhost:4201/nde/home?vid=[your-view-code]&lang=en
+
+### Building your customization package
+1. Ensure your instituion and view IDs are set in `build-settings.env`
+2. Run: `npm run build`
+3. Your view package (zip file) will be generated in the `dist` folder.
+4. Upload this zip file under the Manage customization package tab for your view. 
