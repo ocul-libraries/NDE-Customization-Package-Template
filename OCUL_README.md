@@ -84,6 +84,3 @@ Customizing the NDE in this way has a higher barrier to entry because it require
 - The [RxJS documentation on observables](https://rxjs.dev/guide/observable)
 - The [Redux DevTools browser extension](https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) for inspecting state data in the NDE (also available for other browsers)
 - This [blog post demonstrates how to interact with the store to get values out of the record PNX data in the NDE](https://developers.exlibrisgroup.com/blog/nde-customization-how-to-build-a-component-that-requires-values-from-the-pnx/)
-
-## OCUL Customizations
-For information about the custom elements included in this customization package, see `OCUL_CUSTOMIZATIONS.md`.
