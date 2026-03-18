@@ -1,25 +1,30 @@
 @use "src/app/styles/nde-variables" as vars;
 @use "src/app/styles/nde-mixing" as mixing;
 
+/* Remove the awkward gap at the top of the home page */
+.home-page-container {
+  margin-top: 2rem !important;
+}
+
 .main-landing-page {
   width: vars.$responsiveWidth;
   @include vars.set-responsive-width;
   
   margin: 0 auto;
   gap: 1.5rem;
-
-  //need to delete when the Featured Books will be developed
   margin-block-end: 100px;
 
   @include mixing.respond-to('xsmall') {
     width: 100%;
   }
 
+  /* Make sure all links use the primary colour from the theme */
   a {
     text-decoration: none;
     color: var(--sys-primary);
   }
 
+  /* Layout and styling for the cards. */
   #welcome-omni-container {
     align-items: stretch;
 
@@ -52,7 +57,5 @@
 @media screen and (max-width: 800px) {
   #welcome-omni-container {
     flex-direction: column;
-    margin-left: 0.75rem;
-    margin-bottom: 1.5rem;
   }
 }
